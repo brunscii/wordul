@@ -37,7 +37,7 @@ def play(word):
     while(guesses > 0):
         correct_letters = '          '
         try:
-            guess = str(input('Enter a guess: '))
+            guess = str(input('Enter a guess: ')).lower()
         except KeyboardInterrupt:
             exit()
         if len(guess)!=5:
@@ -72,7 +72,7 @@ if __name__ == "__main__":
     
     print_instructions()
     words = load_words('words5.txt')
-    word = grab_word(words)
+    word = str(grab_word(words)).lower()
     while('/' in word):
         word = grab_word()
     play(word)
