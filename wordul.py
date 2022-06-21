@@ -16,7 +16,8 @@ def print_instructions():
     print('''\n\rThis is a knock off or wordle for the command line
 I will randomly choose a 5 letter word
 You will guess the word
-I will then mark the correct letters with 👍 and incorrect with .👎"
+I will then mark the correct letters with 👍 and incorrect with .👎
+If you are in windows please use the powershell or windows terminal 
 ------------------------------------------------------------------------'''
     )
 
